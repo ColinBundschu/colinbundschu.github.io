@@ -4,35 +4,7 @@
     "href": "index.html",
     "title": "Colin R. Bundschu",
     "section": "",
-    "text": "I am a BIDMaP Postdoctoral Fellow in Kristin Persson’s group at UC Berkeley, where I do atomistic calculations of the thermodynamics of disorder in metal oxides for the Materials Project. Before that I did my PhD in applied physics at Cornell, co-advised by Héctor Abruña and Peter Frazier, doing theoretical electrochemistry on metal oxides, and before that I was a software engineer at Microsoft Game Studios, Rockstar Games, and Oculus VR.\nMy research builds computational tools that converge, in both the mathematical and the numerical sense, so that a chemist can ask for a quantity to a stated tolerance and get it. The program has three parts, described on the Research page:\n\nExact methods for materials. A library, symat, that represents crystals and molecules as labeled point sets over exact rational arrays, so that symmetry, Voronoi partitions, and coordination are computed exactly and once. Built on it: a from-scratch MACE in numba with analytic Hessians, a geometry relaxer with a symmetry certificate, a bond-valence solver, and a cluster expansion with Wang–Landau sampling.\nElectronic structure with a limit. An all-electron, grid-free, parameter-free hierarchy for solids: periodic Hartree–Fock in a generated Gaussian basis, correlated with gap-selected spin-flip EOM-LCCSD, with six explicit convergence knobs and no other setting. Silicon runs on a laptop.\nThermodynamics learned from measurement. Inverting measured disorder thermodynamics to effective cluster interactions with Bayesian inference and conformal-calibrated uncertainty, and choosing the next experiment to shrink that uncertainty.\n\nI was the computational lead on seven experimental collaborations (JACS ×2, Nature Catalysis, PNAS, ACS Catalysis ×2, Chemical Reviews), and I wrote and won two 200,000-GPU-hour NSF ACCESS Maximize allocations and a Schmidt AI for Actionable Matter Modeling grant.\nContact: cbu@berkeley.edu · GitHub · Google Scholar"
-  },
-  {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "First author marked †. Full list on Google Scholar."
-  },
-  {
-    "objectID": "publications.html#in-preparation",
-    "href": "publications.html#in-preparation",
-    "title": "Publications",
-    "section": "In preparation",
-    "text": "In preparation\n\n† A parameter-free, all-electron, grid-free electronic-structure hierarchy for solids, with silicon band gaps (sole author).\n† symat: exact representations for atomistic computation (JOSS).\nOrder–disorder thermodynamics of double perovskites from cluster expansion, with autonomous synthesis and annealing at A-Lab."
-  },
-  {
-    "objectID": "publications.html#thesis",
-    "href": "publications.html#thesis",
-    "title": "Publications",
-    "section": "Thesis",
-    "text": "Thesis\nThe Oxygen Reduction Reaction on Spinel Oxides in Alkaline Media. Ph.D., Applied and Engineering Physics, Cornell University, 2025."
-  },
-  {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
-    "section": "",
-    "text": "The workhorse tools of atomistic calculation run in reasonable time, but the ones built on density functional theory have unbounded error and poor convergence in practice, and the only remedy is another functional, which is a choice, not a limit. My research builds tools that converge in the sense of constructive analysis: a quantity is known when a procedure brings it within any demanded tolerance. Underpinning everything is symat, a library that represents crystals and molecules as labeled point sets over exact rational arrays, so that symmetry, Voronoi partitions, and coordination are computed exactly and once, with floating point entering only in the consumers. On that representation sit a from-scratch numba implementation of MACE with analytic gradients and Hessians, a geometry relaxer with a symmetry certificate, a bond-valence solver, and a cluster expansion with Wang–Landau sampling that matches smol and CASM to 10⁻¹² eV and runs Monte Carlo several times faster than either.\nThe second thread is electronic structure with a limit: an all-electron, grid-free, parameter-free hierarchy for solids built from periodic Hartree–Fock in a generated Gaussian basis, correlated with gap-selected spin-flip EOM-LCCSD, with six explicit convergence knobs and no other setting. On silicon, run on one laptop under one frozen protocol, the correlated read gives Γ→X 1.12 eV and Γ→Γ 3.79 eV against measured values of 1.17 and 3.4 eV, and each rung of the hierarchy moves the right way by the right order of magnitude with no parameter touched. The aim is not better accuracy on silicon but the existence of a limit.\nThe third thread turns the usual direction around: instead of predicting thermodynamics from an electronic-structure reference whose error is unknown, it learns the effective cluster interactions from measured disorder thermodynamics by Bayesian inference, with uncertainty calibrated by conformal statistics and the next experiment chosen to shrink it. The first systems are four non-magnetic double perovskites whose B-site disorder versus temperature I predicted from the cluster expansion and which A-Lab at LBNL has synthesized and is annealing to measure."
+    "text": "I am a BIDMaP Postdoctoral Fellow in Kristin Persson’s group at UC Berkeley, where I do atomistic calculations of the thermodynamics of disorder in metal oxides for the Materials Project. Before that I did my PhD in applied physics at Cornell, co-advised by Héctor Abruña and Peter Frazier, doing theoretical electrochemistry on metal oxides, and before that I was a software engineer at Microsoft Game Studios, Rockstar Games, and Oculus VR.\nMy research builds computational tools that converge, in both the mathematical and the numerical sense, so that a chemist can ask for a quantity to a stated tolerance and get it. The program has three parts, described on the Research page:\n\nExact methods for materials. A library, symat, that represents crystals and molecules as labeled point sets over exact rational arrays, so that symmetry, Voronoi partitions, and coordination are computed exactly and once. Built on it: a from-scratch MACE in numba with analytic Hessians, a geometry relaxer with a symmetry certificate, a bond-valence solver, and a cluster expansion with Wang–Landau sampling.\nElectronic structure with a limit. An all-electron, grid-free, parameter-free hierarchy for solids: periodic Hartree–Fock in a generated Gaussian basis, correlated with gap-selected spin-flip EOM-LCCSD, with six explicit convergence knobs and no other setting. Silicon runs on a laptop.\nThermodynamics learned from measurement. Inverting measured disorder thermodynamics to effective cluster interactions with Bayesian inference and conformal-calibrated uncertainty, and choosing the next experiment to shrink that uncertainty.\n\nI was the computational lead on seven experimental collaborations (JACS ×2, Nature Catalysis, PNAS, ACS Catalysis ×2, Chemical Reviews), and I wrote and won two 200,000-GPU-hour NSF ACCESS Maximize allocations and a Schmidt AI for Actionable Matter Modeling grant.\nLinks: CV · cbu@berkeley.edu · GitHub · Google Scholar · LinkedIn"
   },
   {
     "objectID": "software.html",
@@ -70,10 +42,31 @@
     "text": "Spinel ORR dataset and pipeline\nAn 80,000-calculation solvated-DFT pipeline across 442 spinel compositions, run on ALCF, NREL, DeltaAI, and Jetstream2, with neural surrogates for intermediate energies and an ML-guided scheme that chooses which expensive calculations to run. The dataset of 80,000 solvated joint-DFT free energies is public on Materials Cloud (DOI 10.24435/materialscloud:ka-8a)."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
     "section": "",
-    "text": "I came to science as an outsider from industry. I studied computer science at Harvey Mudd College, then spent four years as a software engineer and game designer at Microsoft Game Studios (Crackdown 3, Ryse), Rockstar Games (multiplayer systems for Red Dead Redemption 2), and Oculus VR (project lead for Oculus Arcade and the first Rift retail demo). The pragmatic habits of that work, shipping tested code on a schedule and treating “so what?” as a legitimate question, are the habits I brought to research.\nI did my M.S. and Ph.D. in Applied and Engineering Physics at Cornell, co-advised by Héctor Abruña and Peter Frazier, doing theoretical electrochemistry and ML-guided computation on metal oxides, supported by an NDSEG Fellowship. I was the computational lead on seven experimental collaborations spanning oxygen reduction, CO₂ reduction, hydrogen oxidation, and fuel-cell degradation. My thesis predicted an alkaline oxygen-reduction pathway on spinel oxides whose computed onset potential matched experiment where the standard pathway missed by 0.7 V.\nSince July 2025 I have been a BIDMaP Postdoctoral Fellow in Kristin Persson’s group at UC Berkeley, working on the Materials Project and on the thermodynamics of disorder in metal oxides. I have written and won two 200,000-GPU-hour NSF ACCESS Maximize allocations and a Schmidt AI for Actionable Matter Modeling grant.\nReading Errett Bishop’s constructive analysis is the reason my work is first-principles and parameter-free: a quantity is known when a procedure brings it within any demanded tolerance, and I think computational chemistry should be held to that standard.\nI was born and raised in Denver.\nCV: PDF\nContact: cbu@berkeley.edu · GitHub · Google Scholar · LinkedIn"
+    "text": "The workhorse tools of atomistic calculation run in reasonable time, but the ones built on density functional theory have unbounded error and poor convergence in practice, and the only remedy is another functional, which is a choice, not a limit. My research builds tools that converge in the sense of constructive analysis: a quantity is known when a procedure brings it within any demanded tolerance. Underpinning everything is symat, a library that represents crystals and molecules as labeled point sets over exact rational arrays, so that symmetry, Voronoi partitions, and coordination are computed exactly and once, with floating point entering only in the consumers. On that representation sit a from-scratch numba implementation of MACE with analytic gradients and Hessians, a geometry relaxer with a symmetry certificate, a bond-valence solver, and a cluster expansion with Wang–Landau sampling that matches smol and CASM to 10⁻¹² eV and runs Monte Carlo several times faster than either.\nThe second thread is electronic structure with a limit: an all-electron, grid-free, parameter-free hierarchy for solids built from periodic Hartree–Fock in a generated Gaussian basis, correlated with gap-selected spin-flip EOM-LCCSD, with six explicit convergence knobs and no other setting. On silicon, run on one laptop under one frozen protocol, the correlated read gives Γ→X 1.12 eV and Γ→Γ 3.79 eV against measured values of 1.17 and 3.4 eV, and each rung of the hierarchy moves the right way by the right order of magnitude with no parameter touched. The aim is not better accuracy on silicon but the existence of a limit.\nThe third thread turns the usual direction around: instead of predicting thermodynamics from an electronic-structure reference whose error is unknown, it learns the effective cluster interactions from measured disorder thermodynamics by Bayesian inference, with uncertainty calibrated by conformal statistics and the next experiment chosen to shrink it. The first systems are four non-magnetic double perovskites whose B-site disorder versus temperature I predicted from the cluster expansion and which A-Lab at LBNL has synthesized and is annealing to measure."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "First author marked †. Full list on Google Scholar."
+  },
+  {
+    "objectID": "publications.html#in-preparation",
+    "href": "publications.html#in-preparation",
+    "title": "Publications",
+    "section": "In preparation",
+    "text": "In preparation\n\n† A parameter-free, all-electron, grid-free electronic-structure hierarchy for solids, with silicon band gaps (sole author).\n† symat: exact representations for atomistic computation (JOSS).\nOrder–disorder thermodynamics of double perovskites from cluster expansion, with autonomous synthesis and annealing at A-Lab."
+  },
+  {
+    "objectID": "publications.html#thesis",
+    "href": "publications.html#thesis",
+    "title": "Publications",
+    "section": "Thesis",
+    "text": "Thesis\nThe Oxygen Reduction Reaction on Spinel Oxides in Alkaline Media. Ph.D., Applied and Engineering Physics, Cornell University, 2025."
   }
 ]

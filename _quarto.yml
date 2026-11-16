@@ -1,21 +1,42 @@
 project:
   type: website
+  output-dir: _site
 
 website:
   title: "Colin Bundschu"
+  description: "Computational chemistry with convergence: exact representations, electronic structure with a limit, and thermodynamics learned from measurement."
+  site-url: https://colinbundschu.github.io
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: software.qmd
+        text: Software
+      - href: about.qmd
+        text: About
+      - href: CV.pdf
+        text: CV
+    right:
+      - icon: github
+        href: https://github.com/ColinBundschu
+        aria-label: GitHub
+      - icon: mortarboard-fill
+        href: https://scholar.google.com/citations?user=zsGf6JQAAAAJ
+        aria-label: Google Scholar
+      - icon: envelope-fill
+        href: mailto:cbu@berkeley.edu
+        aria-label: Email
+  page-footer:
+    left: "Colin R. Bundschu · BIDMaP Postdoctoral Fellow, UC Berkeley"
+    right: "[cbu@berkeley.edu](mailto:cbu@berkeley.edu)"
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: cosmo
     css: styles.css
-    toc: true
-
-
-
+    toc: false
+    page-layout: article

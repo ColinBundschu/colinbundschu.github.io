@@ -1,0 +1,25 @@
+---
+title: "Software"
+---
+
+I ship code, not only papers. Everything below is tested and runnable, and the two unreleased packages are on a path to public release.
+
+## symat
+
+Exact representations for atomistic computation. Crystals and molecules are labeled point sets over exact rational arrays, and every consumer is built on that one representation: a space-group symmetry library, Voronoi and coordination analysis, a bond-valence solver, a cluster expansion with Wang–Landau Monte Carlo, a ground-up numba implementation of MACE with analytic gradients and Hessians, and a second-order geometry relaxer with a symmetry certificate. Python and numba, with CUDA kernels via cuBLAS. More than 1,700 tests, including finite-difference and equivariance checks on every kernel.
+
+*Private repository pending publication. Public release planned for 2027 with a JOSS paper. Code walkthrough available on request.*
+
+## Electronic-structure solver
+
+A parameter-free, grid-free, all-electron electronic-structure hierarchy for solids: periodic Hartree–Fock in a generated Gaussian basis, correlated with gap-selected spin-flip EOM-LCCSD, with Cholesky low-rank integrals and analytic finite-size tails. Six convergence knobs with known limits and no other setting. Silicon runs on a laptop. See [Research](research.qmd) for the current numbers.
+
+*Unreleased. A preprint and the code are in preparation.*
+
+## mass-gap
+
+[github.com/ColinBundschu/mass-gap](https://github.com/ColinBundschu/mass-gap). Constructive lattice gauge theory in Lean 4: about 490,000 lines with no external packages and no `sorry`, `axiom`, `opaque`, `unsafe`, `noncomputable`, or `native_decide` in source. Proves finite-truncation spectral gaps, SU(N) representation theory, and the weak-coupling chain. The uniform-in-volume gap and the continuum limit are stated as open.
+
+## Spinel ORR dataset and pipeline
+
+An 80,000-calculation solvated-DFT pipeline across 442 spinel compositions, run on ALCF, NREL, DeltaAI, and Jetstream2, with neural surrogates for intermediate energies and an ML-guided scheme that chooses which expensive calculations to run. Dataset and workflow are public on Materials Cloud and GitHub.

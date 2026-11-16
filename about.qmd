@@ -2,4 +2,16 @@
 title: "About"
 ---
 
-About this site
+I came to science as an outsider from industry. I studied computer science at Harvey Mudd College, then spent four years as a software engineer and game designer at Microsoft Game Studios (Crackdown 3, Ryse), Rockstar Games (multiplayer systems for Red Dead Redemption 2), and Oculus VR (project lead for Oculus Arcade and the first Rift retail demo). The pragmatic habits of that work, shipping tested code on a schedule and treating "so what?" as a legitimate question, are the habits I brought to research.
+
+I did my M.S. and Ph.D. in Applied and Engineering Physics at Cornell, learning density functional theory with Tomás Arias and then doing theoretical electrochemistry with Héctor Abruña, supported by an NDSEG Fellowship. I was the computational lead on seven experimental collaborations spanning oxygen reduction, CO₂ reduction, hydrogen oxidation, and fuel-cell degradation. My thesis predicted an alkaline oxygen-reduction pathway on spinel oxides whose computed onset potential matched experiment where the standard pathway missed by 0.7 V.
+
+Since July 2025 I have been a BIDMaP Postdoctoral Fellow in Kristin Persson's group at UC Berkeley, working on the Materials Project and on the thermodynamics of disorder in metal oxides. I have written and won two 200,000-GPU-hour NSF ACCESS Maximize allocations and a Schmidt AI for Actionable Matter Modeling grant.
+
+Reading Errett Bishop's constructive analysis is the reason my work is first-principles and parameter-free: a quantity is known when a procedure brings it within any demanded tolerance, and I think computational chemistry should be held to that standard.
+
+I was born and raised in Denver.
+
+**CV:** [PDF](CV.pdf)
+
+**Contact:** [cbu@berkeley.edu](mailto:cbu@berkeley.edu) · [GitHub](https://github.com/ColinBundschu) · [Google Scholar](https://scholar.google.com/citations?user=zsGf6JQAAAAJ) · [LinkedIn](https://www.linkedin.com/in/ColinBundschu)

@@ -1,0 +1,31 @@
+---
+title: "Research"
+---
+
+The workhorse tools of atomistic calculation run in reasonable amounts of time, but the ones built on density functional theory have theoretically unbounded error and poor convergence in practice. A functional's error is a property of the functional and cannot be bounded, and the only remedy is another functional, which is a choice, not a limit. Machine-learned potentials make this cheaper, but they inherit the reference they are trained on.
+
+My research takes this on in two ways. First, tools that produce calculations as successive approximations that converge both theoretically and numerically, by using an exact mathematical representation. This is convergence in the sense of constructive analysis: a quantity is known when a procedure brings it within any demanded tolerance. Second, tools that use experimental data to produce surrogate models, so that concrete measurements drive theory rather than the other way around. Underpinning both is a library built on exact symmetry and representation.
+
+## Exact methods for quantum chemistry and materials
+
+Why don't computational chemistry codes converge to better precision, and why don't you get the same answer when you apply a symmetry operation? I think this is a problem of representation. Rather than carrying atoms as floating-point positions with lattice vectors, *symat* represents crystals and molecules as labeled point sets over exact rational arrays, so the space group, the Voronoi partition, and the coordination environment are computed exactly and once, with floating point entering only in the consumers. Invalid states are unrepresentable rather than checked, and equivariance is guaranteed by construction.
+
+Built on this representation so far:
+
+- A from-scratch numba implementation of MACE with hand-derived forward and backward passes for every block. It reproduces the shipped reference model to 4×10⁻⁷ relative on a 112-atom spinel, which lets relaxation converge to 10⁻⁹ eV and gives Hessians at a cost that makes them routine: phonons, saddle points, and a symmetry certificate that classifies a stationary point by the space group.
+- A bond-valence solver for oxidation states of molecules and crystals.
+- A cluster expansion, Wang–Landau Monte Carlo, and a thermodynamics library. On a 112-atom MgAl₂O₄ supercell with the same cutoffs, training set, and held-out set, it agrees with smol and CASM to 10⁻¹² eV and runs canonical Monte Carlo at 1.7–2.7 million steps per second, 4–10× CASM and 40–50× smol's documented path, on a laptop.
+
+The library is covered by more than 1,700 tests, including finite-difference and equivariance checks on every kernel. Public release is planned for 2027 with a JOSS paper.
+
+## Electronic structure with a limit at an affordable price
+
+Can a correlated, all-electron, parameter-free hierarchy for solids be made cheap enough to be general purpose? The approach is periodic Hartree–Fock in a generated even-tempered Gaussian basis (no pseudopotential, no grid, no fitted basis set), an LCCSD/CEPA(0) ground state with amplitudes selected by a gap criterion, and the lowest spin-flip excitation read as the band gap. Low-rank integrals keep memory linear in what is kept, and analytic finite-size tails replace extrapolation fits with lattice sums. Every approximation is a convergence knob with a known limit, and there are six of them: basis degree, number of characters, candidate pool, kept amplitudes, ladder order, and rank floor. No other setting exists.
+
+On silicon, produced on one laptop under one frozen protocol: the all-electron Hartree–Fock reference gives Γ→X 6.77 eV and Γ→Γ 9.27 eV, triplet CIS with the analytic tail gives 2.39 and 4.82 eV, and the correlated spin-flip read gives 1.12 and 3.79 eV against measured values of 1.17 and 3.4 eV. Each step down the hierarchy moves the right way, by the right order of magnitude, with no parameter touched. The aim is not better accuracy on silicon but the existence of a limit.
+
+## Thermodynamics on labeled data
+
+Can the thermodynamics of disorder in oxides be learned from measurements directly, with the model's error estimated from held-out data and the next experiment chosen to shrink it? The cluster expansion is linear in its interactions, and the correlation vector of a configuration is its sufficient statistic, so configurations sampled under one set of interactions reweight exactly to any other. One sampling pass per system therefore serves a whole Bayesian posterior over the interactions, with uncertainty calibrated by conformal statistics. Site occupancies versus temperature, mixing enthalpies, and transition temperatures are three projections of the same interactions, and each measurement can be chosen in advance to reduce the model's uncertainty the most.
+
+The first systems are non-magnetic double perovskites (La₂HfMgO₆, La₂ZnTiO₆, La₂MgZrO₆, Ba₂ZrSnO₆), whose B-site disorder fraction versus temperature I predicted from the cluster expansion and which A-Lab at LBNL has synthesized and is annealing to measure.

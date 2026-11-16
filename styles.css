@@ -1,1 +1,4 @@
-/* css styles */
+/* site styles */
+body { font-size: 1.05rem; }
+.quarto-title .subtitle { color: #6c757d; }
+h2 { margin-top: 1.6rem; font-size: 1.4rem; }

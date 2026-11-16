@@ -1,0 +1,23 @@
+---
+title: "Publications"
+---
+
+First author marked †. Full list on [Google Scholar](https://scholar.google.com/citations?user=zsGf6JQAAAAJ).
+
+1. Li, Shi, Bundschu, Pollock, Molina Villarino, Krumov, et al. *Unveiling the sensitivity and significance of the Ni oxidation state for alkaline hydrogen oxidation electrocatalysis.* **PNAS** 123, e2534305123 (2026).
+2. Huang, Yang, Weinstock, Bundschu, Li, Sarker, Ruff, et al. *Multimodal in situ X-ray mechanistic studies of a bimetallic oxide electrocatalyst in alkaline media.* **Nature Catalysis** (2025).
+3. Rowell, Joshi, Tan, Yoon, Manassa, Stangel, Bundschu, et al. *Strain in core–shell spinel nanocrystals enhances ORR activity.* **ACS Catalysis** 15, 9738 (2025).
+4. † Bundschu, Ahmadi, Méndez-Valderrama, Yang, Abruña, Arias. *Oxygen reduction pathway for spinel metal oxides in alkaline media: an experimentally supported ab initio study.* **JACS** 146, 4680 (2024).
+5. Li, Krumov, Hu, Bundschu, Xiao, Zhuang, Abruña. *Origin of performance decline in carbonated anion exchange membrane fuel cells.* **JACS** 146, 33587 (2024).
+6. Casebolt DiDomenico, Levine, Bundschu, Reimanis, Arias, Hanrath. *Pulsing the applied potential in electrochemical CO₂ reduction enhances the C₂ activity by modulating the dynamic competitive binding of \*CO and \*H.* **ACS Catalysis** 14, 785 (2024).
+7. Yang, Peltier, Zeng, Schimmenti, Li, Huang, Yan, Potsi, et al. *Electrocatalysis in alkaline media and alkaline membrane-based energy technologies.* **Chemical Reviews** 122, 6117 (2022).
+
+## In preparation
+
+- † A parameter-free, all-electron, grid-free electronic-structure hierarchy for solids, with silicon band gaps (sole author).
+- † *symat*: exact representations for atomistic computation (JOSS).
+- Order–disorder thermodynamics of double perovskites from cluster expansion, with autonomous synthesis and annealing at A-Lab.
+
+## Thesis
+
+*The Oxygen Reduction Reaction on Spinel Oxides in Alkaline Media.* Ph.D., Applied and Engineering Physics, Cornell University, 2025.

@@ -18,7 +18,7 @@
     "href": "software.html#symat",
     "title": "Software",
     "section": "symat",
-    "text": "symat\nExact representations for atomistic computation. Crystals and molecules are labeled point sets over exact rational arrays, and every consumer is built on that one representation: a space-group symmetry library, Voronoi and coordination analysis, a bond-valence solver, a cluster expansion with Wang–Landau Monte Carlo, a ground-up numba implementation of MACE with analytic gradients and Hessians, and a second-order geometry relaxer with a symmetry certificate. Python and numba, with CUDA kernels via cuBLAS. More than 1,700 tests, including finite-difference and equivariance checks on every kernel.\nPrivate repository pending publication. Public release planned for 2027 with a JOSS paper. Code walkthrough available on request."
+    "text": "symat\nExact representations for atomistic computation. Crystals and molecules are labeled point sets over exact rational arrays, and every consumer is built on that one representation: a space-group symmetry library, Voronoi and coordination analysis, a bond-valence solver, a cluster expansion with Wang–Landau Monte Carlo, a ground-up numba implementation of MACE with analytic gradients and Hessians, and a second-order geometry relaxer with a symmetry certificate. Python and numba, with CUDA kernels via cuBLAS. More than 1,700 tests, including finite-difference and equivariance checks on every kernel.\nPrivate repository pending publication. Public release planned for 2027. Code walkthrough available on request."
   },
   {
     "objectID": "software.html#electronic-structure-solver",
@@ -60,7 +60,7 @@
     "href": "publications.html#in-preparation",
     "title": "Publications",
     "section": "In preparation",
-    "text": "In preparation\n\n† A parameter-free, all-electron, grid-free electronic-structure hierarchy for solids, with silicon band gaps (sole author).\n† symat: exact representations for atomistic computation (JOSS).\nOrder–disorder thermodynamics of double perovskites from cluster expansion, with autonomous synthesis and annealing at A-Lab."
+    "text": "In preparation\n\n† A parameter-free, all-electron, grid-free electronic-structure hierarchy for solids, with silicon band gaps (sole author).\n† symat: exact representations for atomistic computation.\n† Order–disorder thermodynamics of double perovskites from cluster expansion, with autonomous synthesis and annealing at A-Lab."
   },
   {
     "objectID": "publications.html#thesis",

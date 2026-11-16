@@ -2,3 +2,6 @@
 body { font-size: 1.05rem; }
 .quarto-title .subtitle { color: #6c757d; }
 h2 { margin-top: 1.6rem; font-size: 1.4rem; }
+
+.headshot { float: right; width: 190px; margin: 0.2rem 0 1rem 1.5rem; border-radius: 8px; }
+@media (max-width: 576px) { .headshot { float: none; display: block; margin: 0 auto 1rem; } }

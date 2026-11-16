@@ -3,6 +3,8 @@ title: "Colin R. Bundschu"
 subtitle: "Computational chemistry with convergence"
 ---
 
+![](headshot.jpg){.headshot fig-alt="Colin Bundschu"}
+
 I am a BIDMaP Postdoctoral Fellow in Kristin Persson's group at UC Berkeley, where I do atomistic calculations of the thermodynamics of disorder in metal oxides for the Materials Project. Before that I did my PhD in applied physics at Cornell, co-advised by Héctor Abruña and Peter Frazier, doing theoretical electrochemistry on metal oxides, and before that I was a software engineer at Microsoft Game Studios, Rockstar Games, and Oculus VR.
 
 My research builds computational tools that converge, in both the mathematical and the numerical sense, so that a chemist can ask for a quantity to a stated tolerance and get it. The program has three parts, described on the [Research](research.qmd) page:

@@ -22,4 +22,4 @@ A parameter-free, grid-free, all-electron electronic-structure hierarchy for sol
 
 ## Spinel ORR dataset and pipeline
 
-An 80,000-calculation solvated-DFT pipeline across 442 spinel compositions, run on ALCF, NREL, DeltaAI, and Jetstream2, with neural surrogates for intermediate energies and an ML-guided scheme that chooses which expensive calculations to run. Dataset and workflow are public on Materials Cloud and GitHub.
+An 80,000-calculation solvated-DFT pipeline across 442 spinel compositions, run on ALCF, NREL, DeltaAI, and Jetstream2, with neural surrogates for intermediate energies and an ML-guided scheme that chooses which expensive calculations to run. The dataset of 80,000 solvated joint-DFT free energies is public on [Materials Cloud](https://doi.org/10.24435/materialscloud:ka-8a) (DOI 10.24435/materialscloud:ka-8a).

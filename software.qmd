@@ -6,6 +6,8 @@ title: "Software"
 
 A package for exact atomic representations for efficient computation. Specifically, standard xyz with lattice vector bases for crystals and molecules are replaced with labeled point sets over exact rational arrays. This is consumed by a space-group symmetry library, Voronoi analysis, a bond-valence solver, a cluster expansion with Wang–Landau Monte Carlo, a ground-up numba implementation of MACE with analytic gradients and Hessians (which uses a second-order geometry relaxer with a symmetry certificate). Built with python and numba.
 
+*Private repository pending publication. Public release planned for 2027. Code walkthrough available on request.*
+
 ## Electronic-structure solver
 
 A parameter-free, grid-free, all-electron electronic-structure hierarchy for solids: periodic Hartree–Fock in a generated Gaussian basis, correlated with gap-selected spin-flip EOM-LCCSD, with Cholesky low-rank integrals and analytic finite-size tails.

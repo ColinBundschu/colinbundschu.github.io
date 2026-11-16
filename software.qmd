@@ -8,7 +8,7 @@ A package for exact atomic representations for efficient computation. Specifical
 
 ## Electronic-structure solver
 
-A parameter-free, grid-free, all-electron electronic-structure hierarchy for solids: periodic Hartree–Fock in a generated Gaussian basis, correlated with gap-selected spin-flip EOM-LCCSD, with Cholesky low-rank integrals and analytic finite-size tails. Six convergence knobs with known limits and no other setting. Silicon runs on a laptop.
+A parameter-free, grid-free, all-electron electronic-structure hierarchy for solids: periodic Hartree–Fock in a generated Gaussian basis, correlated with gap-selected spin-flip EOM-LCCSD, with Cholesky low-rank integrals and analytic finite-size tails.
 
 *Unreleased. A preprint and the code are in preparation.*
 

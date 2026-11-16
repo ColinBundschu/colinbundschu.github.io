@@ -25,7 +25,7 @@
     "href": "software.html#electronic-structure-solver",
     "title": "Software",
     "section": "Electronic-structure solver",
-    "text": "Electronic-structure solver\nA parameter-free, grid-free, all-electron electronic-structure hierarchy for solids: periodic Hartree–Fock in a generated Gaussian basis, correlated with gap-selected spin-flip EOM-LCCSD, with Cholesky low-rank integrals and analytic finite-size tails. Six convergence knobs with known limits and no other setting. Silicon runs on a laptop.\nUnreleased. A preprint and the code are in preparation."
+    "text": "Electronic-structure solver\nA parameter-free, grid-free, all-electron electronic-structure hierarchy for solids: periodic Hartree–Fock in a generated Gaussian basis, correlated with gap-selected spin-flip EOM-LCCSD, with Cholesky low-rank integrals and analytic finite-size tails.\nUnreleased. A preprint and the code are in preparation."
   },
   {
     "objectID": "software.html#mass-gap",

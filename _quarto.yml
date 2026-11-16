@@ -16,8 +16,6 @@ website:
         text: Publications
       - href: software.qmd
         text: Software
-      - href: about.qmd
-        text: About
       - href: CV.pdf
         text: CV
     right:

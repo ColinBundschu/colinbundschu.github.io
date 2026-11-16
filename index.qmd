@@ -15,4 +15,4 @@ My research builds computational tools that converge, in both the mathematical a
 
 I was the computational lead on seven experimental collaborations (JACS ×2, Nature Catalysis, PNAS, ACS Catalysis ×2, Chemical Reviews), and I wrote and won two 200,000-GPU-hour NSF ACCESS Maximize allocations and a Schmidt AI for Actionable Matter Modeling grant.
 
-**Contact:** [cbu@berkeley.edu](mailto:cbu@berkeley.edu) · [GitHub](https://github.com/ColinBundschu) · [Google Scholar](https://scholar.google.com/citations?user=zsGf6JQAAAAJ)
+**Links:** [CV](CV.pdf) · [cbu@berkeley.edu](mailto:cbu@berkeley.edu) · [GitHub](https://github.com/ColinBundschu) · [Google Scholar](https://scholar.google.com/citations?user=zsGf6JQAAAAJ) · [LinkedIn](https://www.linkedin.com/in/ColinBundschu)

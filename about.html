@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-30787e02ebe4bcf4d259ff930190bfc3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -95,8 +95,41 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./software.html"> 
+<span class="menu-text">Software</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./CV.pdf"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/ColinBundschu"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=zsGf6JQAAAAJ"> <i class="bi bi-mortarboard-fill" role="img" aria-label="Google Scholar">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:cbu@berkeley.edu"> <i class="bi bi-envelope-fill" role="img" aria-label="Email">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -109,9 +142,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -134,7 +165,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>About this site</p>
+<p>I came to science as an outsider from industry. I studied computer science at Harvey Mudd College, then spent four years as a software engineer and game designer at Microsoft Game Studios (Crackdown 3, Ryse), Rockstar Games (multiplayer systems for Red Dead Redemption 2), and Oculus VR (project lead for Oculus Arcade and the first Rift retail demo). The pragmatic habits of that work, shipping tested code on a schedule and treating “so what?” as a legitimate question, are the habits I brought to research.</p>
+<p>I did my M.S. and Ph.D.&nbsp;in Applied and Engineering Physics at Cornell, doing theoretical electrochemistry with Héctor Abruña, supported by an NDSEG Fellowship. I was the computational lead on seven experimental collaborations spanning oxygen reduction, CO₂ reduction, hydrogen oxidation, and fuel-cell degradation. My thesis predicted an alkaline oxygen-reduction pathway on spinel oxides whose computed onset potential matched experiment where the standard pathway missed by 0.7 V.</p>
+<p>Since July 2025 I have been a BIDMaP Postdoctoral Fellow in Kristin Persson’s group at UC Berkeley, working on the Materials Project and on the thermodynamics of disorder in metal oxides. I have written and won two 200,000-GPU-hour NSF ACCESS Maximize allocations and a Schmidt AI for Actionable Matter Modeling grant.</p>
+<p>Reading Errett Bishop’s constructive analysis is the reason my work is first-principles and parameter-free: a quantity is known when a procedure brings it within any demanded tolerance, and I think computational chemistry should be held to that standard.</p>
+<p>I was born and raised in Denver.</p>
+<p><strong>CV:</strong> <a href="CV.pdf">PDF</a></p>
+<p><strong>Contact:</strong> <a href="mailto:cbu@berkeley.edu">cbu@berkeley.edu</a> · <a href="https://github.com/ColinBundschu">GitHub</a> · <a href="https://scholar.google.com/citations?user=zsGf6JQAAAAJ">Google Scholar</a> · <a href="https://www.linkedin.com/in/ColinBundschu">LinkedIn</a></p>
 
 
 
@@ -212,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/colinbundschu\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/colinbundschu\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -540,6 +577,19 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Colin R. Bundschu · BIDMaP Postdoctoral Fellow, UC Berkeley</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p><a href="mailto:cbu@berkeley.edu">cbu@berkeley.edu</a></p>
+</div>
+  </div>
+</footer>
 
 
 

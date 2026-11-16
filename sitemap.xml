@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://colinbundschu.github.io/about.html</loc>
-    <lastmod>2026-01-09T23:50:07.840Z</lastmod>
+    <loc>https://colinbundschu.github.io/index.html</loc>
+    <lastmod>2026-11-16T06:57:02.950Z</lastmod>
   </url>
   <url>
-    <loc>https://colinbundschu.github.io/index.html</loc>
-    <lastmod>2026-01-09T23:50:07.840Z</lastmod>
+    <loc>https://colinbundschu.github.io/publications.html</loc>
+    <lastmod>2026-11-16T06:57:32.534Z</lastmod>
+  </url>
+  <url>
+    <loc>https://colinbundschu.github.io/research.html</loc>
+    <lastmod>2026-11-16T06:58:33.500Z</lastmod>
+  </url>
+  <url>
+    <loc>https://colinbundschu.github.io/software.html</loc>
+    <lastmod>2026-11-16T07:04:05.278Z</lastmod>
+  </url>
+  <url>
+    <loc>https://colinbundschu.github.io/about.html</loc>
+    <lastmod>2026-11-16T07:03:42.933Z</lastmod>
   </url>
 </urlset>

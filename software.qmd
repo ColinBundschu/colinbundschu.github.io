@@ -8,7 +8,7 @@ I ship code, not only papers. Everything below is tested and runnable, and the t
 
 Exact representations for atomistic computation. Crystals and molecules are labeled point sets over exact rational arrays, and every consumer is built on that one representation: a space-group symmetry library, Voronoi and coordination analysis, a bond-valence solver, a cluster expansion with Wang–Landau Monte Carlo, a ground-up numba implementation of MACE with analytic gradients and Hessians, and a second-order geometry relaxer with a symmetry certificate. Python and numba, with CUDA kernels via cuBLAS. More than 1,700 tests, including finite-difference and equivariance checks on every kernel.
 
-*Private repository pending publication. Public release planned for 2027 with a JOSS paper. Code walkthrough available on request.*
+*Private repository pending publication. Public release planned for 2027. Code walkthrough available on request.*
 
 ## Electronic-structure solver
 

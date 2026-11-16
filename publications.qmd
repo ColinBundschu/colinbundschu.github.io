@@ -15,8 +15,8 @@ First author marked †. Full list on [Google Scholar](https://scholar.google.co
 ## In preparation
 
 - † A parameter-free, all-electron, grid-free electronic-structure hierarchy for solids, with silicon band gaps (sole author).
-- † *symat*: exact representations for atomistic computation (JOSS).
-- Order–disorder thermodynamics of double perovskites from cluster expansion, with autonomous synthesis and annealing at A-Lab.
+- † *symat*: exact representations for atomistic computation.
+- † Order–disorder thermodynamics of double perovskites from cluster expansion, with autonomous synthesis and annealing at A-Lab.
 
 ## Thesis
 
